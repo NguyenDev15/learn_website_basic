@@ -12,10 +12,16 @@ background-color: aqua;
 }
 .box2{
 background-color: brown;
+border: 10px solid black;
+
 }
 .box3{
 background-color: chartreuse;
 padding: 20px 20px;
+border-style: solid;
+border-color:  navy;
+border-width: 10px;
+
 }
 .box{
     width: 60px;
