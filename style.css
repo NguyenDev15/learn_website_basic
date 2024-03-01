@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .button_1:hover{
     width: 70px;
     color: tomato;
@@ -7,7 +12,7 @@
 }
 
 /* box mẫu*/
-.box{
+.a{
     width: 60px;
     height: 60px;
     color: white;
@@ -39,3 +44,42 @@ border-width: 10px;
 margin-left: 50px;
 }
 
+
+/*  NEW BOX */
+.b{
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px;
+    border: 7px solid rebeccapurple;
+    box-sizing: border-box;
+    
+    
+    
+}
+.box5{
+    background-color: darkorange;
+    margin-top: 200px ;
+    
+}
+.diffbox6{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(9, 255, 58);
+    margin-top: 20px;
+    padding: 15px;
+    border: 8px dashed yellow;
+    box-sizing: border-box;
+    background-clip: content-box;
+}
+
+
+/* hinh anh, mau nen va cac thuoc tinh */
+.diffbox7{
+    width: 50%;
+    height: 50vh;
+    background-image: linear-gradient(0, rgba(255, 3, 0, 0.5), rgba(0, 0, 255, 0.5)), url(/images/content.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-top: 50px;
+    
+}
