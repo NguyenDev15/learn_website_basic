@@ -4,8 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function Attributes CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- CSS FUNCTIONS -->
+    <!-- var(), linear-gradient(), rgba(), rgb(), cacl(), attr() -->
+    <!-- rgb() khác với rgba() là không tạo được tham số alpha ( tức là màu trong suốt ) -->
+    <!-- cacl() dùng để tính toán có thể cộng trừ nhân chia thêm cho kích thước đã định sẵn 
+    có thể dùng để tính toán bằng giá trị tuyệt đối với tương đối-->
+
+    <div class="box">
+    </div>
+
+
+
+    <!-- CSS pseudo-classes ( class giả ) -->
+    <!-- :root, :hover, :active, :frist-child, :last-child -->
+    <!-- :hover khi để trỏ chuột vào thì sẽ hiện lên màu giả -->
+    <!-- :active cũng như :hover nhưng phải giữ trỏ chuột vào phần đấy thì mới thấy -->
+    <!-- :frist-child và last-child là đứa con đầu và cuối, 
+    ví dụ như trong 1 tập hợp thì khi sử dụng 2 lớp giả này sẽ cho thẻ đầu tiên và cuối cùng, 
+    cho thêm các thuộc tính khác như bình thường  -->
+
+
+    <!-- CSS pseu-elements ( elements giả ) -->
+    <!-- ::before, ::after, ::frist-letter, first-line, ::selection -->
+    <!-- ::before và ::after là elements giả, mỗi elements thì chỉ tồn tại được 1 ::before và ::after  -->
+    <!-- ::frist-letter và frist-line dùng để thêm thuộc tính cho chữ cái đầu trên 1 dòng hoặc là cả 1 dòng-->
+    <!-- ::selection khi set màu cho nó thì bôi chuột vào phàn mình đẫ set màu nó sẽ hiện ra màu đã set -->
+
+    <div class="box2"></div>
+    <div class="box3"></div>
+
+   <h1 class="h1">CSS <br>HTML</h1>
+   <ul>
+    <li>text1</li>
+    <li>text2</li>
+    <li>text3</li>
+</ul>
+
+    <!-- POSITON -->
+    <!-- relative, absolute, fixed, sticky -->
+    <!-- relative khi cho vào thuộc tính thì nó sẽ là vị trí tương đối sẽ không bị phụ thuộc vào đối tượng khác
+    có thể thêm nhiều hướng cho nó như top, bottom,.... CÓ THỂ SỬ DỤNG THUỘC TÍNH NÀY ĐỂ TẠO RA NHIỀU MỤC TRONG MENU 
+    TRONG 1 WEBSITE -->
+
+    <!-- - position: absolute;
+    sẽ phụ thuộc vào element có thuộc tính position gần nhất.
+    Và có thể di chuyển xung quanh element đó. Nếu xung quanh không có thẻ cha nào
+    sử dụng position thì thẻ đó sẽ lấy body làm tọa độ, có thể thay đổi vị trí trong thẻ cha di chuyển linh hoạt -->
+    <!-- ứng dụng của position là khi bật menu trên website có thể làm lớp mờ đè lên nhưng vẫn thấy bên trong mờ mờ,
+     kết hop hợp sử dụng màu rgba() -->
+
+     <!-- positon: fixed;  
+    dùng để block thanh header hoặc footer khi lặn chuột xuống để xem thông tin 1 trang web,
+     khi đó các phần được fixed sẽ cố định đứng yên và lăn chuột sẽ đi theo lăn chuột -->
+
+     <!-- position- sticky;
+    đây là thuộc tính rất hay khi tạo thanh navbar hoặc header nó gần giống với position-fixed nhưng khác
+    là khi lăn chuột tới nó thì nó mới đi theo và đứng yên, còn fixed là cố định từ đầu
+    LƯU Ý MUỐN CHẠY ĐƯỢC THÊM TRÊN SAFARI THÌ THÊM position: -webkit-sticky; -->
+
+
+
+    <div class="box-father">
+        <div class="box-child">HELLO HELLO HELLO</div>
+    </div>
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 </body>
 </html>
