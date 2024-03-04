@@ -49,6 +49,19 @@
     flex: 1;
     border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 .column-layout{
     padding: 15px 0;
     display: flex;
@@ -68,4 +81,33 @@
 .sidebar-two{
     flex: 2;
 
+}
+
+
+
+
+
+
+
+
+
+.wrap-layout{
+   background-color: rgb(255, 255, 255);
+   margin-top: 100px;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+ 
+
+}
+.wrap-layout-item{
+    
+   width: 160px;
+   height: 100px;
+   text-align: center;
+   line-height: 90px;
+   background-color: rgb(0, 38, 255);
+   color: #fff;
+   font-size: 40px;
 }
