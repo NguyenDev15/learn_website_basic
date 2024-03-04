@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FLEXBOX ( MAIN AXIS LÀ TRỤC CHÍNH,
+         MAIN AXIS SẼ NẰM NGANG HOẶC DỌC TÙY VÀO THUỘC TÍNH NHƯNG CHẮC CHẮN SẼ LUÔN VUÔNG GÓC VỚI CROSS AXIS ) -->
+         
+    <!-- 2 thành phần chính khi sử dụng FLEXBOX: Flex container và Flex item ( flex contaiter là thẻ chứa, flex item tức 
+        là nằm trong thẻ flex item còn được gọi là thẻ con ) -->
+    <!-- khái niệm của trục: đầu tiên ta có main axis và cross axis, main axis sẽ là trục chính còn cross axis là trục
+    luôn vuông góc với trục cross axis  -->
+    <!-- tiếp theo là main size và cross size: main size là kích thước có chiều song song với main axis, cross size cũng tương tự -->
+
+    <!-- tiếp theo là main start và main end: đây là thứ sẽ quyết định những flex item đi từ hướng nào 
+        nó sẽ đi từ bên main start đổ ra theo chiều viết code ( viết trước hiển thị trước ) -->
+    <!-- cross start và cross end cũng tương tự sẽ bắt đầu từ cross start -->
+    <!-- FLEX là thuộc tính vô cùng linh động  -->
+
+
+    <!---------------------------------------------------------------------------------------------------->
+
+
+    <!-- khi sử dụng display: flex; thì mặc định thuộc tính flex-direction: row; -->
+
+    <!-- flex-wrap: wrap; sẽ giúp chúng ta có thể xuống dòng nếu muốn, 
+        còn flex-wrap: wrap-reverse; sẽ giúp đảo chiều cross start và cross end -->
+    
+    <!-- flex-basis:...; sẽ giúp chỉnh kích thước tùy vào trục chính main axis ở phương nào và nó sẽ set kích thước
+    theo phương hướng đó  -->
+
+    <!-- justify-content:...; sẽ giúp chúng ta chỉnh phương cho flex item cùng hướng với main axis-->
+    <!-- align-content:...; sẽ giúp chúng ta chỉnh phương cho flex item nhưng cùng hướng với cross axis -->
+
+    <!-- flex-grow:...; cũng giúp chúng ta căn chỉnh kích thước to ra, nó sẽ cùng phương với trục chính là main axis.
+         flex-shrink:...; cũng giống với flex-grow:...; nhưng ngược lại thì nó sẽ thu nhỏ kích thước lại -->
+
+    <!-- flex:..; là cú pháp short-hand bao gồm những thuộc tính flex-basis:..; flex-grow:...; flex-shrink:...; -->
+
+
+    <!-- LƯU Ý:  flex item nếu để flex: 1; thì khi chỉ 1 ông có thì ông đó sẽ cố chiếm hết phần còn lại
+    còn nếu nhiều ông có cùng lúc thì các ông đó sẽ tự động thẳng hàng với nhau -->
+
+
+    <!-- order:...; sẽ quyết định những flex item nào xuất hiện trước và sau --> 
+
+
+
+
+<!-- NAvBAR -->
+
+<div class="navbar">
+    <ul class="nav-list">
+        <li class="nav-item">TRANG CHỦ</li>
+        <li class="nav-item">GIỚI THIỆU</li>
+        <li class="nav-item">TẢI ỨNG DỤNG</li>
+    </ul>
+    <ul class="nav-list">
+        <li class="nav-item">TÀI KHOẢN</li>
+        <li class="nav-item">ĐĂNG NHẬP</li>
+        <li class="nav-item">ĐĂNG KÝ</li>
+    </ul>
+</div>
+<div class="slide">
+    <div class="form-container">
+        <div style="width:100%; padding: 0 5px 0 5px;">
+            <div class="form-row">
+               <label style="width: 80px;" for="Name" >Name:</label>
+               <input class="form-input" type="text" id="name">
+            </div>
+            <div class="form-row">
+               <label style="width: 80px;" for="password" >Password:</label>
+               <input class="form-input" type="password" id="password ">
+            </div>    
+        </div>
+    </div>
+    </div>
+    <div class="column-layout">
+        <div class="column-item sidebar-one">
+            <h2>SIDEBAR ONE</h2>
+            <p>Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức
+               sống tươi mới căng tràn. Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức
+              </p>
+        </div>
+        <div class="column-item main-column">
+            <h2>MAIN COLUMN</h2>
+            <p>Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức
+               sống tươi mới căng tràn. Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức </p>
+
+           <p> sống tươi mới căng tràn Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức </p>
+
+          </p> sống tươi mới căng tràn.Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức
+               sống tươi mới căng tràn <p>
+        </div>
+        <div class="column-item sidebar-two">
+            <h2>SIDEBAR TWO</h2>
+            <p>Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức
+               sống tươi mới căng tràn. Thiên nhiên tạo hóa có bốn mùa, mỗi mùa là một bước chuyển của thời gian: xuân, hạ, thu, đông. 
+               Trong các mùa, em thích nhất là mùa xuân vì mùa xuân mang đến cho con người và vạn vật một sức
+               sống tươi mới căng tràn.</p>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
