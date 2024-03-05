@@ -1,0 +1,42 @@
+body{
+    min-height: 100vh;
+    display: flex;
+}
+body > div {
+    margin: auto;
+}
+   
+   /* BLOCK */
+
+.btn{
+   background-color: transparent;
+   outline: none;
+   border: none;
+   border-radius: 30px;
+   padding: 12px 30px; 
+   color: aliceblue;
+   cursor: pointer;
+   min-width: 150px;
+}
+.btn:hover{
+    background-color: black;
+}
+
+/* TRICK */
+
+.btn + .btn {
+    margin-left: 20px;
+}
+
+
+
+
+.btn--succes{
+    background-color: greenyellow;
+}
+.btn--warning{
+    background-color: rgb(255, 157, 0);
+}
+.btn--danger{
+    background-color: rgb(224, 0, 0);
+}
