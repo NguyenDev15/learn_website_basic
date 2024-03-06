@@ -21,3 +21,17 @@ Elements trong đó.
         padding:...;
         margin:...;
     }
+
+- line-height: (nen xai so thap phan);
+
+- @keyframes
+Bắt đầu bằng cách tạo một quy tắc @keyframes, đặt cho nó một tên duy nhất để xác định hoạt hình.
+Bên trong quy tắc, bạn chỉ định một hoặc nhiều khung hình chính, giống như ảnh chụp nhanh của hoạt hình tại các thời điểm khác nhau.
+   ví dụ: ta ghi @keyframes ra xong đặt 1 tên cho nó
+          trong mỗi khung hình chính, bạn xác định các thuộc tính CSS (ví dụ: transform, opacity) muốn hoạt hình hóa
+
+          Sau khi bạn xác định quy tắc @keyframes, bạn có thể áp dụng hoạt hình cho một phần tử HTML bằng cách sử dụng thuộc tính animation.
+Thuộc tính này lấy một số giá trị, bao gồm:
+animation-name: Tham chiếu tên bạn đã đặt cho quy tắc @keyframes.
+animation-duration: Xác định tổng thời gian hoạt hình sẽ hoàn thành (ví dụ: 1s, 2s).
+Các thuộc tính tùy chọn khác như animation-timing-function, animation-delay, animation-iteration-count và animation-direction có thể tùy chỉnh thêm thời gian phát lại và hành vi của hoạt hình.

@@ -7,7 +7,7 @@ body > div {
 }
    
    /* BLOCK */
-
+   /* BUTTON */
 .btn{
    background-color: transparent;
    outline: none;
@@ -31,7 +31,7 @@ body > div {
 
 
 
-.btn--succes{
+.btn--success{
     background-color: greenyellow;
 }
 .btn--warning{
@@ -40,3 +40,7 @@ body > div {
 .btn--danger{
     background-color: rgb(224, 0, 0);
 }
+
+
+
+
