@@ -35,3 +35,12 @@ Thuộc tính này lấy một số giá trị, bao gồm:
 animation-name: Tham chiếu tên bạn đã đặt cho quy tắc @keyframes.
 animation-duration: Xác định tổng thời gian hoạt hình sẽ hoàn thành (ví dụ: 1s, 2s).
 Các thuộc tính tùy chọn khác như animation-timing-function, animation-delay, animation-iteration-count và animation-direction có thể tùy chỉnh thêm thời gian phát lại và hành vi của hoạt hình.
+
+
+
+# Khi block lồng block thì đặt tên NTN?
+- Block con là thành phần dùng chung thì chúng ta nên class cho nó những thuộc tính chung và không lập lại tên của thẻ để tránh
+gây hiểu nhầm  ( ví dụ ở index3.html)
+
+- Block con chứa nhiều thành phần elements thì chúng ta sẽ coi nó như 1 block mới và sử dụng căc thẻ con nhỏ ở bên trong để tránh dài và rối
+( ví dụ ở index3.html)
