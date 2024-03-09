@@ -1,0 +1,32 @@
+:root{
+    --white-color: #e7e7e7;
+    --black-color: #000;
+    --text-color: #333;
+}
+*{
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 2.5rem;
+    font-family: 'Rotobo',sans-serif;
+    box-sizing: border-box;
+}
+
+/* withd 1200px để thiết bị lớn hơn 1200px sẽ hiển thị 
+còn max-withd 100% giúp giảm tỉ lệ hiển thị linh hoạt trên thiết bị nhỏ hơn 1200px*/
+.grid{
+    width: 1630px;
+    max-width: 100%;
+
+    /* giúp căn khối này nằm giữa khi nằm trong khối kia */
+    margin: 0 auto;
+
+}
+.grid__full-withd{
+    width: 100%;
+}
+.gird__row{
+    display: flex;
+    flex-wrap: wrap;
+}
