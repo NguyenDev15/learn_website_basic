@@ -1,5 +1,5 @@
 :root{
-    --white-color: #e7e7e7;
+    --white-color: #ffffff;
     --black-color: #000;
     --text-color: #333;
 }
@@ -29,4 +29,14 @@ còn max-withd 100% giúp giảm tỉ lệ hiển thị linh hoạt trên thiế
 .gird__row{
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes qrdelay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
