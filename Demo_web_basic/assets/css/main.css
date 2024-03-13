@@ -64,15 +64,7 @@
     left: 0;
     top: 120%;
     display: none;
-    animation: qrdelay ease-out 1.5s;
-}
-@keyframes qrdelay{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+    animation: FadeIn ease-out 1.5s;
 }
 .navbar__item-qr::before{
     content: "";
@@ -230,7 +222,10 @@
 
 /* Authen Modal */
 .auth-form{
-    width: 500px;
+    width: 504px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .auth-form__container{
@@ -241,6 +236,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
 }
 
 .auth-form__heading{
@@ -292,9 +288,93 @@
     color: var(--primary-color);
 }
 
+
+
 .auth-form__controls{
-    margin-top: 90px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
     
+}
+
+.auth-form__control-back{
+    margin-right: 8px;
+}
+
+
+
+
+.auth-form__socials{
+    background-color: #eaeaea;
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-form__social-icon{
+    font-size: 1.8rem;
+    
+}
+
+
+.btn.auth-form__social--facebook{
+    background-color: #344F8E;
+    color: var(--white-color);
+    
+}
+
+.btn.auth-form__social--google{
+    color: var(--text-color);
+    background-color: white;
+    
+}
+
+
+.auth-form__social--facebook
+.auth-form__social-icon{
+    color: var(--white-color);
+}
+
+.auth-form__social--google
+.auth-form__social-icon{
+    background-image: linear-gradient(90deg, red, yellow, green, blue);    
+    color: var(--white-color);
+}
+
+.auth-form__social-icon{
+    
+}
+
+
+.auth-form__social-text{
+    margin: 0 36px;
+}
+
+
+
+/* Login Form */
+
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.auth-form__help-link{
+    
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+}
+
+.auth-form__help-dash{
+    height: 20px;
+    display: block;
+    border-left: 1px solid #eaeaea;
+    margin: 0 14px 0 14px;
+}
+
+.auth-form__help-forgot{
+    color: var(--primary-color);
 }
