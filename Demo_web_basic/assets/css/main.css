@@ -33,7 +33,7 @@
 }
 
 .navbar__item-user-name{
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 .navbar__item-user-menu{
@@ -69,6 +69,10 @@
 
 .navbar__item-user-item{
     list-style: none;
+}
+
+.navbar__item-user-item--dash{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .navbar__item-user-link:hover{
@@ -113,7 +117,7 @@
 .navbar__item-icon{
     color: var(--white-color);
     text-decoration: none;
-    padding: 0 5px;
+    padding: 0 2px;
 }
 .navbar__item--text-no-cursor{
     cursor: default;
@@ -179,13 +183,16 @@
     width: 440px;
     background-color: var(--white-color);
     border: 1px solid #d3d3d3;
+    border-radius: 4px;
     animation: notifygrowth ease-in 0.3s;
     transform-origin: 90% top;
     display: none;
+
 }
 .navbar__notify-header{
     background-color: var(--white-color);
     cursor: default;
+    border-radius: 4px;
     }
 
     /* Arrow */
@@ -457,6 +464,11 @@
     width: 200px;
 }
 
+.header__logo-link{
+    text-decoration: none;
+    color: transparent;
+}
+
 .header__logo-img{
     width: 150px;
 
@@ -711,7 +723,7 @@
 .header__search-option{
     width: 126px;
     position: absolute;
-    top: 100%;
+    top: 98%;
     right: 0; 
     padding: 0;
     box-shadow: 0 1px 2px #e0e0e0;
