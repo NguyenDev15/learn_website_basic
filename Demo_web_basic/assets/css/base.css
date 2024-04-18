@@ -23,7 +23,7 @@ html{
 /* withd 1200px để thiết bị lớn hơn 1200px sẽ hiển thị 
 còn max-withd 100% giúp giảm tỉ lệ hiển thị linh hoạt trên thiết bị nhỏ hơn 1200px*/
 .grid{
-    width: 1630px;
+    width: 1600px;
     max-width: 100%;
 
     /* giúp căn khối này nằm giữa khi nằm trong khối kia */
@@ -33,10 +33,26 @@ còn max-withd 100% giúp giảm tỉ lệ hiển thị linh hoạt trên thiế
 .grid__full-withd{
     width: 100%;
 }
-.gird__row{
+.grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+/* Test */
+.grid__col-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+
+.grid__col-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+
 
 @keyframes FadeIn{
     from{
