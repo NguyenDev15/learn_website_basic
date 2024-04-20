@@ -112,10 +112,9 @@ còn max-withd 100% giúp giảm tỉ lệ hiển thị linh hoạt trên thiế
     font-size: 1.2rem ;
     padding: 0 12px;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .btn.btn--normal:hover{
@@ -140,3 +139,54 @@ còn max-withd 100% giúp giảm tỉ lệ hiển thị linh hoạt trên thiế
     cursor: default;
 }
 
+
+/* Selection */
+
+.select-input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    background-color: var(--white-color);
+    height: 34px;
+    border-radius: 2px;
+    padding: 0 12px;
+}
+
+.select-input:hover .select-input__list{
+    display: block;
+}
+
+.select-input__label{
+    font-size: 1.4rem;
+}
+
+.select-input__icon{
+    font-size: 1.2  rem;
+    color: rgb(131, 131, 131);
+}
+
+.select-input__list{
+    padding: 8px 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    background-color: var(--white-color);
+    list-style: none; 
+    display: none;
+    animation: FadeIn ease 0.3s;
+}
+
+.select-input__link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 4px 0;
+    display: block;
+}
+
+.select-input__link:hover{
+    color: var(--primary-color);
+}
